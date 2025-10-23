@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprende a jugar al Ajedrez</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 2em auto;
+      background-color: white;
+      padding: 2em;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0056b3;
+    }
+    .pieza {
+      display: flex;
+      align-items: center;
+      margin: 2em 0;
+    }
+    .pieza lottie-player {
+      width: 140px;
+      height: 140px;
+      margin-right: 1em;
+    }
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #222;
+      color: white;
+      margin-top: 3em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aprende a jugar al Ajedrez</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Reglas básicas</h2>
+      <p>El ajedrez es un juego de estrategia entre dos jugadores. El objetivo es <strong>dar jaque mate</strong> al rey rival, es decir, que no tenga ninguna jugada disponible para escapar del ataque.</p>
+      <ul>
+        <li>El tablero tiene 64 casillas alternando colores.</li>
+        <li>Cada jugador tiene 16 piezas.</li>
+        <li>Las blancas mueven primero.</li>
+        <li>El juego puede terminar en jaque mate, tablas o abandono.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Movimientos de las piezas</h2>
+
+      <div class="pieza">
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_chess_king.json" background="transparent" speed="1" loop autoplay></lottie-player>
+        <p><strong>Rey:</strong> se mueve una casilla en cualquier dirección.</p>
+      </div>
+
+      <div class="pieza">
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_chess_queen.json" background="transparent" speed="1" loop autoplay></lottie-player>
+        <p><strong>Dama:</strong> se mueve en línea recta en cualquier dirección.</p>
+      </div>
+
+      <div class="pieza">
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_chess_rook.json" background="transparent" speed="1" loop autoplay></lottie-player>
+        <p><strong>Torre:</strong> se mueve en líneas verticales u horizontales tantas casillas como desee.</p>
+      </div>
+
+      <div class="pieza">
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_chess_bishop.json" background="transparent" speed="1" loop autoplay></lottie-player>
+        <p><strong>Alfil:</strong> se mueve en diagonal tantas casillas como quiera.</p>
+      </div>
+
+      <div class="pieza">
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_chess_knight.json" background="transparent" speed="1" loop autoplay></lottie-player>
+        <p><strong>Caballo:</strong> se mueve en forma de “L” y puede saltar sobre otras piezas.</p>
+      </div>
+
+      <div class="pieza">
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_chess_pawn.json" background="transparent" speed="1" loop autoplay></lottie-player>
+        <p><strong>Peón:</strong> avanza una casilla hacia adelante; en su primer movimiento puede avanzar dos casillas.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Aprende Ajedrez</p>
+  </footer>
+</body>
+</html>
